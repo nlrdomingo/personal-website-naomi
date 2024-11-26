@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <!-- Adobe Font Embed Code: Header Font-->
+    <link rel="stylesheet" href="https://use.typekit.net/hyw5bfh.css">
+   <!-- Google Font Embed Code: Body Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  
   <title>Naomi's Portfolio</title>
   <style>
     /* General reset */
@@ -12,30 +20,33 @@
       box-sizing: border-box;
     }
 
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #0055FF; /* Bright blue background */
-      color: PalePink;
-    }
+   body {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300; /* Thin text weight */
+  font-style: normal;
+  background-color: #0055FF; /* Bright blue background */
+  color: PalePink;
+}
 
-    /* Navbar styling */
-    nav {
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      background-color: #0055FF;
-    }
+   /* Navbar styling */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: #0055FF;
+  font-family: "roca", sans-serif; /* Header font from Adobe Fonts */
+}
 
-    nav a {
-      text-decoration: none;
-      color: pink;
-      margin: 0 15px;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 20px;
-    }
-
+nav a {
+  text-decoration: none;
+  color: pink;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-family: "roca", sans-serif; /* Apply header font to menu links */
+}
     nav a:hover {
       background-color: #D9FFA6; /* Soft green highlight */
       color: #0055FF;
@@ -52,22 +63,28 @@
       padding: 50px 20px;
     }
 
-    .hero h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
-    }
+ .hero h1 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  font-size: 26px; /* Adjust if needed */
+  color: #D9FFA6; /* Replace this with your desired color */
+  margin-bottom: 24px;
+}
 
-    .hero h1 span {
-      color: #D9FFA6; /* Soft green */
-    }
-
-    .hero h2 {
-      font-size: 18px;
-      margin-top: 5px;
+    
+.hero h2 {
+  font-family: "roca", sans-serif;
+  font-weight: 800;
+  font-size: 150px;
+  color: #FFDADE;
+  line-height: 1; /* Bring PORT and FOLIO closer */
+  margin: 0; /* Ensure no extra spacing */
+}
     }
 
     /* Main content */
     .content {
+      
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -157,8 +174,9 @@
 
   <!-- Hero Section -->
   <div class="hero">
-    <h1>Welcome to <span>Naomi's</span></h1>
-    <h1>PORTFOLIO 2024</h1>
+    <h1>Welcome to Naomi's</h1>
+    <h2>PORT</h2>
+     <h2>FOLIO</h2>
   </div>
 
   <!-- Content Section -->
