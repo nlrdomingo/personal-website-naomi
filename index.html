@@ -1,200 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-   <!-- Adobe Font Embed Code: Header Font-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adobe Font Embed Code: Header Font-->
     <link rel="stylesheet" href="https://use.typekit.net/hyw5bfh.css">
-   <!-- Google Font Embed Code: Body Font-->
+    <!-- Google Font Embed Code: Body Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-  
-  <title>Naomi's Portfolio</title>
-  <style>
-    /* General reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 
-   body {
-  font-family: "Fredoka", sans-serif;
-  font-weight: 300; /* Thin text weight */
-  font-style: normal;
-  background-color: #0055FF; /* Bright blue background */
-  color: PalePink;
-}
-
-   /* Navbar styling */
-nav {
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-  background-color: #0055FF;
-  font-family: "roca", sans-serif; /* Header font from Adobe Fonts */
-}
-
-nav a {
-  text-decoration: none;
-  color: pink;
-  margin: 0 15px;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 20px;
-  font-family: "roca", sans-serif; /* Apply header font to menu links */
-}
-    nav a:hover {
-      background-color: #D9FFA6; /* Soft green highlight */
-      color: #0055FF;
-    }
-
-    nav a.active {
-      background-color: #D9FFA6;
-      color: #0055FF;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-    }
-
- .hero h1 {
-  font-family: "Fredoka", sans-serif;
-  font-weight: 300;
-  font-size: 26px; /* Adjust if needed */
-  color: #D9FFA6; /* Replace this with your desired color */
-  margin-bottom: 24px;
-}
-
-    
-.hero h2 {
-  font-family: "roca", sans-serif;
-  font-weight: 800;
-  font-size: 150px;
-  color: #FFDADE;
-  line-height: 1; /* Bring PORT and FOLIO closer */
-  margin: 0; /* Ensure no extra spacing */
-}
-    }
-
-    /* Main content */
-    .content {
+    <title>Naomi's Portfolio</title>
+    <style>
       
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 20px;
-    }
+      body {
+        background-color: #0055FF;
+        font-family: "Fredoka", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: PalePink;
+      }
 
-    .intro-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-    }
+      /* Navbar styling */
+      nav {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        background-color: #0055FF;
+        font-family: "roca", sans-serif;
+      }
 
-    .intro-section img {
-      width: 250px;
-      height: auto;
-      border-radius: 10px;
-      margin: 10px;
-    }
+      nav a {
+        text-decoration: none;
+        color: pink;
+        margin: 0 15px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-family: "roca", sans-serif;
+      }
 
-    .intro-text {
-      max-width: 500px;
-      background-color: white;
-      color: #0055FF;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 10px;
-    }
+      nav a:hover {
+        background-color: #D9FFA6;
+        color: #0055FF;
+      }
 
-    .intro-text h3 {
-      color: #D9FFA6;
-    }
+      nav a.active {
+        background-color: #D9FFA6;
+        color: #0055FF;
+      }
 
-    /* Contact Info */
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        padding: 50px 20px;
+      }
 
-    .contact-info a {
-      text-decoration: none;
-      color: #0055FF;
-      background-color: #FFD9E6;
-      margin: 10px;
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-      font-weight: bold;
-    }
+      .hero h1 {
+        font-family: "Fredoka", sans-serif;
+        font-weight: 300;
+        font-size: 26px;
+        /* Adjust if needed */
+        color: #D9FFA6;
+        /* Replace this with your desired color */
+        margin-bottom: 24px;
+      }
 
-    .contact-info a:hover {
-      background-color: #FF99C2;
-    }
 
-    /* Shapes */
-    .shape {
-      position: absolute;
-    }
+      .hero h2 {
+        font-family: "roca", sans-serif;
+        font-weight: 800;
+        font-size: 150px;
+        color: #FFDADE;
+        line-height: 1;
+        /* Bring PORT and FOLIO closer */
+        margin: 0;
+        /* Ensure no extra spacing */
+      }
 
-    .shape.green {
-      background-color: #D9FFA6;
-      width: 60px;
-      height: 60px;
-      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-    }
 
-    .shape.pink {
-      background-color: #FFD9E6;
-      width: 100px;
-      height: 100px;
-      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-    }
-  </style>
-</head>
-<body>
-  <!-- Navigation -->
-  <nav>
-    <a href="#" class="active">Home</a>
-    <a href="#">About Me</a>
-    <a href="#">Work</a>
-    <a href="#">Resume</a>
-    <a href="#">Contact Me</a>
-  </nav>
+      /* Main content */
+      .content {
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>Welcome to Naomi's</h1>
-    <h2>PORT</h2>
-     <h2>FOLIO</h2>
-  </div>
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+      }
 
-  <!-- Content Section -->
-  <div class="content">
-    <div class="intro-section">
-      <img src="naomi-headshot2.jpg" alt="Naomi's Headshot">
-      <div class="intro-text">
-        <h3>Hello!</h3>
-        <p>
-          My name is <strong>Naomi</strong>, a 2nd year Global Business & Digital Arts Student with expertise in UX/UI design, branding, and graphic design. I specialize in creating user-centered designs and impactful visual identities that bring ideas to life. Let’s collaborate to craft innovative solutions!
-        </p>
+      .intro-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .intro-section img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        margin: 10px;
+      }
+
+      .intro-text {
+        max-width: 500px;
+        background-color: white;
+        color: #0055FF;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px;
+      }
+
+      .intro-text h3 {
+        color: #D9FFA6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">About Me</a>
+      <a href="#">Work</a>
+      <a href="#">Resume</a>
+      <a href="#">Contact Me</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Welcome to <b><i>Naomi's</i></b></h1>
+      <h2>PORT</h2>
+      <h2>FOLIO</h2>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+      <div class="intro-section">
+        <img src="naomi-headshot2.jpg" alt="Naomi's Headshot">
+        <div class="intro-text">
+          <h3>Hello!</h3>
+          <p>
+            My name is <strong>Naomi</strong>, a 2nd year Global Business &amp Digital Arts Student with expertise in UX/UI design, branding, and graphic design. I specialize in creating user-centered designs and impactful visual identities that bring ideas to life. Let’s collaborate to craft innovative solutions!
+          </p>
+        </div>
       </div>
+
     </div>
 
-    <div class="contact-info">
-      <a href="https://linkedin.com/naomi-domingo" target="_blank">LinkedIn</a>
-      <a href="mailto:nlrdomin@uwaterloo.ca">Email Me</a>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
